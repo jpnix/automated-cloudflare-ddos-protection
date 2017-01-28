@@ -18,7 +18,7 @@ SEND_SNS_MESSAGE()
 if [ "$TRAFFIC_COUNT" -ge 400 ]; then
   CLOUDFLARE_ATTACK_MODE
   SEND_SNS_MESSAGE
-  sleep 20m
+  sleep 20s
   service httpd restart
 else
         exit
